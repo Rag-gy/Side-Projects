@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(24, 32, 50);
+}
+
+#message-form{
+    position: absolute;
+    bottom:30px;
+    margin:20px;
+    right:20%;
+}
+
+#message-input{
+    width:40vw;
+    height:35px;
+    margin:10px;
+    margin-right:30px;
+    padding:10px;
+    font-family: 'Sofia Sans', sans-serif;
+    border-radius:7px;
+    border:none;
+    font-size:large;
+    box-shadow:0 2.8px 2.2px rgba(255, 255, 255, 0.034),0 6.7px 5.3px rgba(255, 255, 255, 0.048),0 12.5px 10px rgba(255, 255, 255, 0.06),0 22.3px 17.9px rgba(255, 255, 255, 0.072),0 41.8px 33.4px rgba(255, 255, 255, 0.086),0 100px 80px rgba(255, 255, 255, 0.12)
+}
+
+#message-input:focus{
+    outline: none;
+}
+
+#send-button{
+    width:fit-content;
+    height:fit-content;
+    padding:20px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size:larger;
+    border-radius:10px;
+    border:none;
+    margin:10px;
+    color: rgb(37, 44, 59);
+    background-color: rgb(116, 163, 210);
+}
+
+#message-container{
+    color:aliceblue;
+    margin-top:20px;
+    width:50vw;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    font-family: 'Sofia Sans', sans-serif;
+    border-radius: 10px;
+}
+
+@media (max-width:800px){
+    #message-form{
+        right:15%;
+    }
+    #send-button{
+        margin-left:-10px;
+    }
+}
+
+@media (max-width:550px){
+    #message-form{
+        margin-right:0px;
+        right:10%;
+    }
+}
+
+@media (max-height:450px){
+    #message-form{
+        bottom:0px;
+    }
+}
+
+@media (max-height:350px){
+    #message-form{
+        bottom:-20px;
+    }
+}

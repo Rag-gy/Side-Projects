@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <!-- The Socket Io creates a root file named socket.io.js which is used to perform connection and data transmission -->
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div id="message-container"></div>
+    <form id="message-form" style="display: flex;">
+        <input type="text" id="message-input" placeholder="Type your message" autocomplete="off">
+        <button type="submit" id="send-button">Send</button>
+    </form>
+</body>
+</html>
